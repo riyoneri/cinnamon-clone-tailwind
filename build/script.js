@@ -1,20 +1,13 @@
-const useWindow = () => {
-  let navigation = document.getElementById("navigation");
-  var scroll = window.scrollY;
-  console.log(scroll);
-  if (scroll >= 100) {
-    navigation.setAttribute("class", "py-5 fixed");
+const changeNav = () => {
+  const navbar = document.querySelector("#navigation")
+  const scrollPosition = window.pageYOffset;
+
+  if(scrollPosition > 80) {
+    navbar.classList.add("fixed", "bg-white","px-20", "left-2/4", "transform", "text-zinc-900", "-translate-x-2/4", "top-0", "w-full")
   } else {
-    navigation.setAttribute("class", "flex justify-between py-5");
+    navbar.classList.remove("fixed", "bg-white","px-20", "left-2/4", "transform", "text-zinc-900", "-translate-x-2/4", "top-0", "w-full")
   }
-};
+}
 
-window.onload = () => {
-//   useWindow();
-};
-
-window.onscroll = () => {
-//   useWindow();
-  // console.log(navigationBar)
-  // console.log(window.scrollY)
-};
+window.addEventListener("scroll", changeNav)
+window.addEventListener("load", changeNav)
