@@ -66,11 +66,14 @@
                             <a href="#"
                                 class="font-mont-semi-bold transition duration-400 hover:text-indigo-600">Careers</a>
                             <a href="#" class="font-mont-semi-bold transition duration-400 hover:text-indigo-600">Blog</a>
-                            <a href="#" class="border-white border-2 rounded-full px-2.5 relative overflow-hidden hover:border-indigo-600 hover:transition-colors hover:delay-100" id="play-btn">
-                                <span class="absolute rounded-full"></span>
-                                <i class="fa-solid fa-play py-2 duration-500"></i>
+                            <a href="#" class="border-white border-2 rounded-full px-2.5 relative overflow-hidden group/play-btn hover:border-blue-600">
+                                <span class="absolute transition-all duration-500 rounded-full p-4 group-hover/play-btn:p-0 border-[30px] z-10 border-blue-600 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></span>
+                                <i class="fa-solid fa-play py-2 duration-500 relative z-20"></i>
                             </a>
-                            <a href="#" class="py-2 px-5 bg-blue-600 text-white">Contact Us</a>
+                            <a href="#" class="py-2 px-5 bg-blue-600 text-white relative group/contact overflow-hidden border-blue-600 border-2">
+                                <span class="group-hover/contact:text-blue-600 z-30 relative" >Contact Us</span>
+                                <span class="bg-white transition-all duration-500 z-0 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full group-hover/contact:p-32"></span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -105,7 +108,7 @@
                 <span class="font-mont-heavy text-gray-600">IOS DEVELOPMENT</span>
             </a>
             <div class="">
-                <p class="font-mont-heavy text-4xl">Smart Build: Maximise <br> your field survey</p>
+                <a href="#" class="font-mont-heavy text-4xl hover:text-blue-600">Smart Build: Maximise <br> your field survey</a>
                 <p class="mt-6 text-gray-600 text-lg md:max-w-2xl">An application for construction management. Make
                     manipulation over
                     construction map
@@ -125,7 +128,7 @@
                 </a>
             </div>
             <div class="">
-                <p class="font-mont-heavy text-4xl">Corrily: Optimize prices <br> to maximize revenue</p>
+                <a href="#" class="font-mont-heavy text-4xl hover:text-blue-600">Corrily: Optimize prices <br> to maximize revenue</a>
                 <p class="mt-6 text-gray-600 md:max-w-2xl">Corrily tailors your prices and discounts to the needs of
                     different user
                     segments in order to increase your revenue.
@@ -147,7 +150,7 @@
                 </a>
             </div>
             <div class="">
-                <p class="font-mont-heavy text-4xl">Fiona: Engage & <br> Decide</p>
+                <a href="#" class="font-mont-heavy text-4xl hover:text-blue-600">Fiona: Engage & <br> Decide</a>
                 <p class="mt-6 text-gray-600 md:max-w-2xl">Fiona is a fintech consumer-facing website that enables users
                     to search
                     for financial products, discover them, and receive personalized recommendations.</p>
@@ -192,7 +195,10 @@
                             right time, in front of the right people</p>
                     </div>
                     <div class="md:space-y-5">
-                        <button class="md:py-2 md:px-7 bg-blue-600">See our services</button>
+                        <button class="md:py-2 md:px-7 relative overflow-hidden bg-blue-600 group/services-btn border-2 border-blue-600">
+                            <span class="group-hover/services-btn:text-blue-600 relative z-10">See our services</span>
+                            <span class="bg-white transition-all duration-500 z-0 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full group-hover/services-btn:p-32"></span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -207,7 +213,11 @@
                 <p class="text-gray-600 md:text-lg">By hiring and managing talented people with skills and specific to
                     your project. we build you a team
                     tha's accomplished, agile and scalable in both directions.</p>
-                <button class="md:mt-5 md:py-2 md:px-6 bg-blue-600 text-white">See how it works</button>
+                <button class="md:mt-5 md:py-2 md:px-6 bg-blue-600 text-white relative overflow-hidden group/see-our-btn border-2 border-blue-600">
+                    <span class="group-hover/see-our-btn:text-blue-600 relative z-10">See how it works</span>
+                    <span
+                        class="bg-white transition-all duration-500 z-0 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full group-hover/see-our-btn:p-32"></span>
+                </button>
             </div>
         </div>
         <img class="absolute right-0 -bottom-3" src="./assets/team-demand.webp" alt="">
@@ -248,66 +258,46 @@
             <div>
                 <p class="font-mont-heavy md:text-5xl">Who we are</p>
                 <div class="md:mt-14 flex flex-col gap-5 font-semibold">
-                    <a href="#" class="text-indigo-600 translate-x-3 transition text-lg relative who-link">
-                        <span class="text-indigo-600 font-mont-bold transform -translate-x-full pr-1 bottom-2 absolute">___</span>
-                        <span>Product design</span>
-                    </a>
                     <a href="#"
-                        class="hover:text-indigo-600 hover:translate-x-3 hover:transition hover:text-lg relative who-link">
-                        <span
-                            class="hidden text-indigo-600 font-mont-bold transform -translate-x-full pr-1 bottom-2 absolute">___</span>
+                        class="hover:text-indigo-600 font-mont-bold text-md relative who-link">
                         <span>
                             Web development
                         </span>
                     </a>
                     <a href="#"
-                        class="hover:text-indigo-600 hover:translate-x-3 hover:transition hover:text-lg relative who-link">
-                        <span
-                            class="hidden text-indigo-600 font-mont-bold transform -translate-x-full pr-1 bottom-2 absolute">___</span>
+                        class="hover:text-indigo-600 font-mont-bold text-md relative who-link">
                         <span>
                             Mobile development
                         </span>
                     </a>
                     <a href="#"
-                        class="hover:text-indigo-600 hover:translate-x-3 hover:transition hover:text-lg relative who-link">
-                        <span
-                            class="hidden text-indigo-600 font-mont-bold transform -translate-x-full pr-1 bottom-2 absolute">___</span>
+                        class="hover:text-indigo-600 font-mont-bold text-md relative who-link">
                         <span>
                             Quality assurance
                         </span>
                     </a>
                     <a href="#"
-                        class="hover:text-indigo-600 hover:translate-x-3 hover:transition hover:text-lg relative who-link">
-                        <span
-                            class="hidden text-indigo-600 font-mont-bold transform -translate-x-full pr-1 bottom-2 absolute">___</span>
+                        class="hover:text-indigo-600 font-mont-bold text-md relative who-link">
                         <span>Marketing</span>
                     </a>
                     <a href="#"
-                        class="hover:text-indigo-600 hover:translate-x-3 hover:transition hover:text-lg relative who-link">
-                        <span
-                            class="hidden text-indigo-600 font-mont-bold transform -translate-x-full pr-1 bottom-2 absolute">___</span>
+                        class="hover:text-indigo-600 font-mont-bold text-md relative who-link">
                         <span>
                             Project management
                         </span>
                     </a>
                     <a href="#"
-                        class="hover:text-indigo-600 hover:translate-x-3 hover:transition hover:text-lg relative who-link">
-                        <span
-                            class="hidden text-indigo-600 font-mont-bold transform -translate-x-full pr-1 bottom-2 absolute">___</span>
+                        class="hover:text-indigo-600 font-mont-bold text-md relative who-link">
                         <span>Human resources</span>
                     </a>
                     <a href="#"
-                        class="hover:text-indigo-600 hover:translate-x-3 hover:transition hover:text-lg relative who-link">
-                        <span
-                            class="hidden text-indigo-600 font-mont-bold transform -translate-x-full pr-1 bottom-2 absolute">___</span>
+                        class="hover:text-indigo-600 font-mont-bold text-md relative who-link">
                         <span>
                             Sales
                         </span>
                     </a>
                     <a href="#"
-                        class="hover:text-indigo-600 hover:translate-x-3 hover:transition hover:text-lg relative who-link">
-                        <span
-                            class="hidden text-indigo-600 font-mont-bold transform -translate-x-full pr-1 bottom-2 absolute">___</span>
+                        class="hover:text-indigo-600 font-mont-bold text-md relative who-link">
                         <span>
                             Fluffy friends
                         </span>
@@ -327,7 +317,13 @@
                 </p>
                 <p>Get closer to our Design Team and see what they have prepared for you in the <a href="#"
                         class="text-indigo-600">Design Depamine Newsletter</a></p>
-                <button class="py-2 px-3 bg-blue-600 text-white capitalize">Read About Us</button>
+                        
+                <button
+                    class="py-2 px-3 bg-blue-600 text-white capitalize relative overflow-hidden group/read-about-us border-2 border-blue-600">
+                    <span class="group-hover/read-about-us:text-blue-600 relative z-10">Read About Us</span>
+                    <span
+                        class="bg-white transition-all duration-500 z-0 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full group-hover/read-about-us:p-32"></span>
+                </button>
             </div>
         </div>
     </div>
@@ -342,7 +338,12 @@
                 <p class="md:max-w-sm">Seize the unique opportunity to participate in a wide range of course conducted
                     by
                     professionals with an impeccable reputation in the digital industry.</p>
-                <button class="py-2 px-4 capitalize bg-blue-800 text-white mt-5">See how it works</button>
+                <button
+                    class="py-2 px-4 capitalize bg-blue-600 text-white mt-5 relative overflow-hidden group/how-works border-2 border-blue-600">
+                    <span class="group-hover/how-works:text-blue-600 relative z-10">See how it works</span>
+                    <span
+                        class="bg-white transition-all duration-500 z-0 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full group-hover/how-works:p-32"></span>
+                </button>
             </div>
         </div>
         <img src="./assets/college-image.webp" class="absolute bottom-0 h-72 right-0" alt="">
@@ -355,7 +356,12 @@
                     <p class="text-5xl font-mont-heavy text-white">We're growing</p>
                     <p class="text-gray-300">Jump on board with Cinnamon and get the privilege of working on challenging
                         projects for leading global companies! Make the world a better, more connected place.</p>
-                    <button class="py-2 px-4 bg-blue-800 text-white capitalize">See all positions</button>
+                    <button
+                        class="py-2 px-4 bg-blue-600 text-white capitalize relative overflow-hidden group/all-position border-2 border-blue-600">
+                        <span class="group-hover/all-position:text-blue-600 relative z-10">See all positions</span>
+                        <span
+                            class="bg-white transition-all duration-500 z-0 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full group-hover/all-position:p-32"></span>
+                    </button>
                 </div>
                 <div class="text-2xl font-mont-heavy text-white">
                     <a href="#" class="flex justify-between gap-5 items-center border-b-gray-500 border-b-2 py-5">
@@ -476,7 +482,12 @@
     <div class="relative">
         <div class="md:py-20 md:px-20 space-y-10 text-center 2xl:max-w-5xl 2xl:mx-auto">
             <p class="font-mont-heavy text-5xl">Have a project in mind? <br> Let's work together.</p>
-            <button class="py-2 px-4 bg-blue-800 capitalize text-white">Contact Us</button>
+            <button
+                class="py-2 px-4 bg-blue-600 capitalize text-white relative overflow-hidden group/contact-us border-2 border-blue-600">
+                <span class="group-hover/contact-us:text-blue-600 relative z-10">Contact Us</span>
+                <span
+                    class="bg-white transition-all duration-500 z-0 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full group-hover/contact-us:p-32"></span>
+            </button>
         </div>
         <img src="./assets/icon-10.webp" class="absolute h-60 bottom-0" alt="">
     </div>
@@ -551,7 +562,12 @@
                             <p class="font-mont-heavy text-white text-3xl">Our newsletter</p>
                             <input class="bg-transparent border-b border-gray-500 py-2 focus:border-transparent"
                                 type="text" placeholder="Your E-mail">
-                            <button type="submit" class="bg-blue-800 py-2 px-4 text-white">Subscribe</button>
+                            <button
+                                class="bg-blue-600 py-2 px-4 text-white relative overflow-hidden group/subscribe border-2 border-blue-600">
+                                <span class="group-hover/subscribe:text-blue-600 relative z-10">Subscribe</span>
+                                <span
+                                    class="bg-white transition-all duration-500 z-0 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full group-hover/subscribe:p-32"></span>
+                            </button>
                         </form>
                         <div class="flex flex-col gap-10">
                             <svg class="w-[200px] h-full" width="99" height="28" viewBox="0 0 99 28" fill="none"
