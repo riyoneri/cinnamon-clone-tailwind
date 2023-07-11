@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "noise-pattern": "url(/assets/noise.png)",
+        "noise-pattern": "url(../assets/noise.png)",
       },
       fontFamily: {
         mont: "Mont-regular",

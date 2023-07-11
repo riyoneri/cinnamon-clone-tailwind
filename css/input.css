@@ -11,20 +11,20 @@
 
 @font-face {
     font-family: Mont-Regular;
-    src: url("/assets/fonts/MontRegular.woff2") format("opentype");
+    src: url("../assets/fonts/MontRegular.woff2") format("opentype");
 }
 
 @font-face {
     font-family: Mont-Semi-Bold;
-    src: url("/assets/fonts/MontSemiBold.woff2") format("opentype");
+    src: url("../assets/fonts/MontSemiBold.woff2") format("opentype");
 }
 
 @font-face {
     font-family: Mont-Bold;
-    src: url("/assets/fonts/MontBold.woff2") format("opentype");
+    src: url("../assets/fonts/MontBold.woff2") format("opentype");
 }
 
 @font-face {
     font-family: Mont-Heavy;
-    src: url("/assets/fonts/MontHeavy.woff2") format("opentype");
+    src: url("../assets/fonts/MontHeavy.woff2") format("opentype");
 }
