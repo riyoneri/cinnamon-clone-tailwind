@@ -8,14 +8,10 @@ const changeNav = () => {
   
   if(scrollPosition > 50) {
     navbar.classList.add("fixed", "bg-white","px-5", "md:px-20", "left-2/4", "transform", "text-zinc-900", "-translate-x-2/4", "top-0", "w-full", "z-10")
-    // playButton.classList.remove("border-white");
-    // playButton.classList.add("border-indigo-600");
     logoSVG.querySelectorAll("path").forEach(path => path.setAttribute("fill", "rgb(24,24,27)"))
     burgetBtn.querySelectorAll("path").forEach(path => path.setAttribute("stroke", "rgb(24,24,27)"))
   } else {
     navbar.classList.remove("fixed", "bg-white","px-5", "md:px-20", "left-2/4", "transform", "text-zinc-900", "-translate-x-2/4", "top-0", "w-full")
-    // playButton.classList.remove("border-indigo-600");
-    // playButton.classList.add("border-white");
     logoSVG.querySelectorAll("path").forEach(path => path.setAttribute("fill", "white"))
     burgetBtn.querySelectorAll("path").forEach(path => path.setAttribute("stroke", "white"))
   }
